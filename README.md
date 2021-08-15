@@ -1,1 +1,2 @@
 # back_account
+<!-- This is my simle project for a bank user coustomarce. This project create HTML CSS and Javascript. First Open this page Gif this Email : galib@gbs.com Password : galibgbs NID : 1234 And click The login Button and Go to another Page. This Page is your profile or account Please deposit and Withdrow  -->

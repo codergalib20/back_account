@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBS Banking Your Account</title>
+    <!-- *********GOOGLE TEXT FONT********* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *********CSS STYLESHEET LINK********* -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="account">
+        <h2><span id="user-name-output">GBS BACK</span> ACCOUNT</h2>
+        <div class="account-total">
+          <div class="card">
+            <div class="card-body">
+              <h3>Deposit</h3>
+              <h2>$ <span id="total-deposit">00</span></h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Withdraw</h3>
+              <h2>$ <span id="total-withdraw">00</span></h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Balance</h3>
+              <h2>$ <span id="total-balance">10</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="account-new">
+          <div class="card">
+            <h2>Deposit</h2>
+            <input
+              id="deposit-input"
+              type="text"
+              placeholder="$ amount you want to deposit"
+            />
+            <button id="deposit-button">Deposit</button>
+          </div>
+          <div class="card">
+            <h2>withdraw</h2>
+            <input
+              id="withdraw-input"
+              type="text"
+              placeholder="$ amount you want to withdraw"
+            />
+            <button id="withdraw-button">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
