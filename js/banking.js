@@ -1,36 +1,17 @@
-// let depositFiled = document.getElementById('deposit-input');
-// let withdrawFiled = document.getElementById('withdraw-input');
-// const withdrawFiledText = withdrawFiled.value;
-
-// // Deposit Button
-// document.getElementById('deposit-button').addEventListener('click', function () {
-//     const depositFiledText = depositFiled.value;
-//     const depositFiledNumber = parseFloat(depositFiledText);
-//     console.log(depositFiledNumber);
-
-//     const totalDeposit = document.getElementById('total-deposit');
-//     const totalDepositText = totalDeposit.innerText;
-//     const totalDepositNumber = parseFloat(totalDepositText)
-//     const totalDepositAccounts = totalDepositNumber + depositFiledNumber;
-//     totalDeposit.innerText = totalDepositAccounts
-
-
-//     const totalBalanceStor = document.getElementById('total-balance')
-//     const totalBalanceText = totalBalanceStor.innerText;
-//     const totalBalanceNumber = parseFloat(totalBalanceText);
-//     const totalBalanceAccount = totalBalanceNumber + totalDepositNumber;
-//     totalBalanceStor.innerText = totalBalanceAccount
-
-
-
-//     depositFiled.value = ''
-// })
-
-document.getElementById('deposit-button').addEventListener('click', function ()
-{
+function getInputValue() {
     const depositInput = document.getElementById('deposit-input');
     const newDepositText = depositInput.value;
     const newDepositAmount = parseFloat(newDepositText)
+
+    depositInput.value = '';
+
+    return newDepositAmount;
+}
+
+
+document.getElementById('deposit-button').addEventListener('click', function ()
+{
+    const newDepositAmount = getInputValue()
 
 
     const depostiTotal = document.getElementById('total-deposit');
@@ -47,7 +28,6 @@ document.getElementById('deposit-button').addEventListener('click', function ()
     balanceTotal.innerText = newBalanceTotal;
 
 
-    depositInput.value = ''
 })
 
 
